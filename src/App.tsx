@@ -1,11 +1,16 @@
 import Header from './components/header';
-import { Fragment } from 'react'
+import _404 from './components/404';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+// import { Fragment } from 'react'
 
 const App: React.FC = () => {
   return (
-    <Fragment>
-      <Header />
-    </Fragment>
+    <BrowserRouter>
+      <Switch>
+        <Route path='/' exact component={Header} />
+        <Route path='/' component={_404} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
