@@ -5,7 +5,6 @@
   "repository": "git@github.com:W1kipedia/W1kipedia.github.io.git",
   "author": "W1kipedia <jrizzo2007@gmail.com>",
   "license": "MIT",
-  "homepage": "W1kipedia.github.io",
   "private": false,
   "scripts": {
     "start": "react-scripts start",
