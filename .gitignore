@@ -1,0 +1,10 @@
+# The basic ignore build and node_modules
+node_modules
+build
+
+# Any typescript declaration files that are made
+**/*.d.ts
+
+# Package locks for both yarn and npm
+package-lock.json
+yarn.lock

@@ -1,0 +1,40 @@
+{
+  "name": "w1kipedia.github.io",
+  "version": "0.1.0",
+  "main": "public/index.html",
+  "repository": "git@github.com:W1kipedia/W1kipedia.github.io.git",
+  "author": "W1kipedia <jrizzo2007@gmail.com>",
+  "license": "MIT",
+  "homepage": "W1kipedia.github.io",
+  "private": false,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "react-scripts": "^4.0.3",
+    "typescript": "^4.3.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
