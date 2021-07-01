@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/W1kipedia.github.io/static/css/main.12399661.chunk.css",
+    "main.js": "/W1kipedia.github.io/static/js/main.694bf064.chunk.js",
+    "main.js.map": "/W1kipedia.github.io/static/js/main.694bf064.chunk.js.map",
+    "runtime-main.js": "/W1kipedia.github.io/static/js/runtime-main.b1c387bc.js",
+    "runtime-main.js.map": "/W1kipedia.github.io/static/js/runtime-main.b1c387bc.js.map",
+    "static/js/2.c7a84640.chunk.js": "/W1kipedia.github.io/static/js/2.c7a84640.chunk.js",
+    "static/js/2.c7a84640.chunk.js.map": "/W1kipedia.github.io/static/js/2.c7a84640.chunk.js.map",
+    "index.html": "/W1kipedia.github.io/index.html",
+    "static/css/main.12399661.chunk.css.map": "/W1kipedia.github.io/static/css/main.12399661.chunk.css.map",
+    "static/js/2.c7a84640.chunk.js.LICENSE.txt": "/W1kipedia.github.io/static/js/2.c7a84640.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1c387bc.js",
+    "static/js/2.c7a84640.chunk.js",
+    "static/css/main.12399661.chunk.css",
+    "static/js/main.694bf064.chunk.js"
+  ]
+}
