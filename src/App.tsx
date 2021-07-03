@@ -1,7 +1,9 @@
 import Header from './components/header';
+import Footer from './components/footer';
+import Home from './components/home';
 import _404 from './components/404';
-import { BrowserRouter, Route } from 'react-router-dom';
-import React, { Component } from 'react'
+import { HashRouter as Router, Route, Switch, NavLink } from 'react-router-dom';
+import { Component } from 'react'
 
 interface AppProps {};
 
@@ -14,19 +16,15 @@ class App extends Component<AppProps, AppState> {
 	}
 	render() {
 		return (
-			<BrowserRouter>
-				<Route>
-					<Header page={(():string => {
-						const check = RegExp(/[^\/]*$/);
-						const results = check.exec(window.location.href);
-
-						return (results === null) ? 'home' : results[0];
-					})()} />
-					{(() => {
-						console.log(window.location.href)
-					})()}
-				</Route>
-			</BrowserRouter>
+			<Router>
+				<Header />
+				<Switch>
+					<Route path="/" exact component={Home} />
+					<Route path="/home" exact component={Home} />
+					<Route path="/" component={_404} />
+				</Switch>
+				<Footer />
+			</Router>
 		)
 	}
 }

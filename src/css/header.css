@@ -6,7 +6,7 @@ header {
 	justify-content: center;
 }
 
-.active_nav a {
+.__nav .active li {
 	color: rgb(0, 140, 255) !important;
 }
 
@@ -27,15 +27,12 @@ header {
 .__nav li {
 	display: inline-block;
 	padding: 0 20px;
-}
-
-.__nav li a {
 	color: #fff;
 	text-decoration: none;
 	transition: all 0.3s ease 0s;
 }
 
-.__nav li a:hover {
+.__nav li:hover {
 	color: rgb(0, 140, 255);
 }
 

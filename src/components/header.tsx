@@ -1,8 +1,8 @@
 import { Component } from 'react'
+import { NavLink } from 'react-router-dom';
 import '../css/header.css'
 
 interface HeaderProps {
-	page?: 'home' | 'about' | 'contact' | 'projects' | string
 }
 
 interface HeaderState {
@@ -29,13 +29,21 @@ class Header extends Component<HeaderProps, HeaderState> {
 					</a>
 
 					<ul className={`__nav ${this.state.isOpen ? 'visible_navbar' : ''}`}>
-						<li className={`first_nav_element ${(this.props.page === 'home' || this.props.page === '') ? 'active_nav' : ''}`}><a href="#">Home</a></li>
+						<NavLink exact to="/home" replace>
+							<li className={`first_nav_element`}>Home</li>
+						</NavLink>
 
-						<li className={(this.props.page === 'about') ? 'active_nav' : ''}><a href="#">About</a></li>
+						<NavLink exact to="/about" replace>
+							<li>About</li>
+						</NavLink>
 
-						<li className={(this.props.page === 'contact') ? 'active_nav' : ''}><a href="#">Contact</a></li>
+						<NavLink exact to="/contact" replace>
+							<li>Contact</li>
+						</NavLink>
 
-						<li className={(this.props.page === 'projects') ? 'active_nav' : ''}><a href="#">Projects</a></li>
+						<NavLink exact to="/projects" replace>
+							<li>Projects</li>
+						</NavLink>
 					</ul>
 				</nav>
 			</header>
