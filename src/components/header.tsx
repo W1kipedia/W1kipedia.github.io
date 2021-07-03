@@ -2,6 +2,7 @@ import { Component } from 'react'
 import '../css/header.css'
 
 interface HeaderProps {
+	page?: 'home' | 'about' | 'contact' | 'projects' | string
 }
 
 interface HeaderState {
@@ -28,10 +29,13 @@ class Header extends Component<HeaderProps, HeaderState> {
 					</a>
 
 					<ul className={`__nav ${this.state.isOpen ? 'visible_navbar' : ''}`}>
-						<li className="first_nav_element active_nav"><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Projects</a></li>
+						<li className={`first_nav_element ${(this.props.page === 'home' || this.props.page === '') ? 'active_nav' : ''}`}><a href="#">Home</a></li>
+
+						<li className={(this.props.page === 'about') ? 'active_nav' : ''}><a href="#">About</a></li>
+
+						<li className={(this.props.page === 'contact') ? 'active_nav' : ''}><a href="#">Contact</a></li>
+
+						<li className={(this.props.page === 'projects') ? 'active_nav' : ''}><a href="#">Projects</a></li>
 					</ul>
 				</nav>
 			</header>
