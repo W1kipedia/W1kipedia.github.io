@@ -55,6 +55,10 @@ header {
 	height: 21px;
 }
 
+.toggle_button:hover {
+	cursor: pointer;
+}
+
 @media (max-width: 500px) {
 	.toggle_button {
 		display: flex;
