@@ -45,7 +45,7 @@ header {
 }
 
 .toggle_button {
-	position: absolute;
+	position: fixed;
 	top: .75rem;
 	right: 1rem;
 	display: none;
@@ -55,25 +55,33 @@ header {
 	height: 21px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 	.toggle_button {
 		display: flex;
 	}
 
 	.__nav {
-		display: none;
+		display: flex;
 		flex-direction: column;
-		position: absolute;
-		top: .5rem;
-		left: .75rem;
+		position: fixed;
+		border-radius: 15px;
+		border: 2px solid #fff;
+		top: 7.5rem;
+		left: -8.75rem;
+		padding: 5px 15px 5px 0;
+		background-color: rgb(39, 39, 39);
+		transition: transform .4s;
 	}
 
 	.visible_navbar {
-		display: flex;
+		transform: translateX(140px);
 	}
 
 	.__nav li {
-		padding: 10px;
+		padding: 15px;
+		width: 100%;	
+		margin: 1px;
+		margin-left: 0;
 		font-size: 1.5rem;
 	}
 
