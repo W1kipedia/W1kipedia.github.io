@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.introduction {
+	text-align: center;
+	margin-top: 120px;
+	margin-bottom: 265px;
+}
+
+.introduction h1 {
+	font-family: 'Roboto Thin';
+	margin: 0 0 10px;
+	font-weight: 100;
+}
+
+@media (max-width: 400px) {
+	.introduction {
+		margin-bottom: 355px;
+	}
+}
+
+.introduction_buttons {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.introduction_buttons button {
+	font-family: 'Roboto Thin';
+	color: #fff;
+	background-color: #ff7a7a;
+	border: 1px solid rgb(131, 131, 131);
+	font-size: 1.1rem;
+	border-radius: 2px;
+	margin: 0 7px;
+	transition: font-size ease 50ms;
+}
+
+.introduction_buttons button:hover {
+	cursor: pointer;
+	background-color: rgb(211, 180, 180);
+	color: black;
+	font-size: 1.2rem;
+}
+
+@media (max-width: 500px) {
+	.introduction_buttons button {
+		margin-bottom: 5px;
+		font-size: 1.5rem;
+	}
+	.introduction_buttons button:hover {
+		font-size: 1.6rem;
+	}
+}
