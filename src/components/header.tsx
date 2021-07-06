@@ -29,7 +29,7 @@ class Header extends Component<HeaderProps, HeaderState> {
 					</a>
 
 					<ul className={`__nav ${this.state.isOpen ? 'visible_navbar' : ''}`}>
-						<NavLink exact to="/home" replace>
+						<NavLink exact to="/" replace>
 							<li className={`first_nav_element`}>Home</li>
 						</NavLink>
 

@@ -20,7 +20,6 @@ class App extends Component<AppProps, AppState> {
 				<Header />
 				<Switch>
 					<Route path="/" exact component={Home} />
-					<Route path="/home" exact component={Home} />
 					<Route path="/" component={_404} />
 				</Switch>
 				<Footer />
