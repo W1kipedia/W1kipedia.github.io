@@ -37,13 +37,14 @@ class Header extends Component<HeaderProps, HeaderState> {
 							<li>About</li>
 						</NavLink>
 
+						<NavLink exact to="/projects" replace>
+							<li>Projects</li>
+						</NavLink>
+
 						<NavLink exact to="/contact" replace>
 							<li>Contact</li>
 						</NavLink>
 
-						<NavLink exact to="/projects" replace>
-							<li>Projects</li>
-						</NavLink>
 					</ul>
 				</nav>
 			</header>
