@@ -4,12 +4,12 @@ import '../css/404.css';
 class _404 extends Component {
 	render() {
 		return (
-			<Fragment>
+			<main>
 				<div className="_404">
 					<h1>404 ERROR</h1>
 					<h3>Could not find the page you are looking for</h3>
 				</div>
-			</Fragment>
+			</main>
 		)
 	}
 }

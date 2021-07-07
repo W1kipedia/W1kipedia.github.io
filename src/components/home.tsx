@@ -12,13 +12,15 @@ class Root extends Component<RootProps, RootState> {
 	}
 	render() {
 		return (
-			<div className="introduction">
-				<h1>Student, ReactJs beginner, Typescript enthusiast.</h1>
-				<div className="introduction_buttons">
-					<Link to="/about" replace><button>Learn more</button></Link>
-					<Link to="/projects" replace><button>What I've been working on</button></Link>
+			<main>
+				<div className="introduction">
+					<h1>Student, ReactJs beginner, Typescript enthusiast.</h1>
+					<div className="introduction_buttons">
+						<Link to="/about" replace><button>Learn more</button></Link>
+						<Link to="/projects" replace><button>What I've been working on</button></Link>
+					</div>
 				</div>
-			</div>
+			</main>
 		)
 	}
 }
