@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+:root {
+	--main-color: rgb(0, 140, 255);
+}
+
 body {
 	box-sizing: border-box;
 	background-color: rgb(39, 39, 39);

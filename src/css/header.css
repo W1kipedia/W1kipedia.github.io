@@ -7,7 +7,7 @@ header {
 }
 
 .__nav .active li {
-	color: rgb(0, 140, 255) !important;
+	color: var(--main-color) !important;
 }
 
 @media (max-width: 600px) {
@@ -33,7 +33,7 @@ header {
 }
 
 .__nav li:hover {
-	color: rgb(0, 140, 255);
+	color: var(--main-color);
 }
 
 
