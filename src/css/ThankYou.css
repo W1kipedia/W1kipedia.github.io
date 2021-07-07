@@ -1,0 +1,14 @@
+.ThankYou {
+	text-align: center;
+}
+
+.ThankYou h1 {
+	color: lightgreen;
+}
+
+@media (max-width: 500px) {
+	.ThankYou {
+		margin-top: 200px;
+		margin-bottom: 250px;
+	}
+}
