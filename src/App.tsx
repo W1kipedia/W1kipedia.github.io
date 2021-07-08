@@ -1,7 +1,11 @@
+// struct
 import Header from './components/header';
 import Footer from './components/footer';
-import Home from './components/home';
 import _404 from './components/404';
+// pages
+import Home from './components/home';
+import ThankYou from './components/ThankYou';
+// deps
 import { HashRouter as Router, Route, Switch, NavLink } from 'react-router-dom';
 import { Component } from 'react'
 
@@ -20,6 +24,7 @@ class App extends Component<AppProps, AppState> {
 				<Header />
 				<Switch>
 					<Route path="/" exact component={Home} />
+					<Route path="/ThankYou" exact component={ThankYou} />
 					<Route path="/" component={_404} />
 				</Switch>
 				<Footer />
