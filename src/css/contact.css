@@ -1,0 +1,101 @@
+.Contact {
+	margin-bottom: 175px;
+}
+
+.Contact h1 {
+	text-align: center;
+}
+
+._honey {
+	display: none !important;
+}
+
+.ContactForm {
+	display: flex;
+	justify-content: center;
+}
+
+.col > input {
+	padding: 8px;
+	width: 100%;
+	border: 1px;
+	border-radius: 2px;
+	font-size: 1rem;
+	margin-bottom: 10px;
+	transition: outline ease-in .1s;
+}
+
+.col > input:focus {
+	outline: 0;
+}
+
+.form_headers {
+	display: flex;
+	flex-direction: column;
+}
+
+.form_message {
+	margin-left: 30px;
+}
+
+.form_message textarea {
+	resize: none;
+	font-size: 1rem;
+}
+
+.form_message textarea:focus {
+	outline: 0;
+}
+
+.ContactSubmit {
+	display: block;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 2rem;
+	width: 35%;
+	border-radius: 15px;
+	border-width: 0;
+	background-color: rgb(61, 61, 61);
+	color: black;
+	font-size: 1.2rem;
+}
+
+.ContactSubmit:hover {
+	cursor: not-allowed;
+}
+
+.ContactSubmit.active_btn {
+	color: var(--main-color);
+}
+
+.ContactSubmit.active_btn:hover {
+	cursor: pointer;
+	color: #fff;
+}
+
+.breaker {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.breaker h4 {
+	opacity: .8;
+	font-size: .8rem;
+	margin: 20px 2px;
+}
+
+.smallLine {
+	height: 2px;
+	width: 30px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Contact > h2 > a {
+	color: var(--main-color);
+}
+
+.Contact > h2 > a:hover {
+	color: #fff;
+}
