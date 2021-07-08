@@ -41,9 +41,13 @@ class Header extends Component<HeaderProps, HeaderState> {
 							<li>Projects</li>
 						</NavLink>
 
-						<NavLink exact to="/contact" replace>
+						{/* <NavLink exact to="/contact" replace>
 							<li>Contact</li>
-						</NavLink>
+						</NavLink> */}
+
+						<a target="_blank" href="https://formsubmit.co/el/yibohe">
+							<li>Contact</li>
+						</a>
 
 					</ul>
 				</nav>
