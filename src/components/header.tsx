@@ -45,7 +45,7 @@ class Header extends Component<HeaderProps, HeaderState> {
 							<li>Contact</li>
 						</NavLink> */}
 
-						<a target="_blank" href="https://formsubmit.co/el/yibohe">
+						<a onClick={() => window.location.replace("/#/ThankYou")} target="_blank" href="https://formsubmit.co/el/yibohe">
 							<li>Contact</li>
 						</a>
 
