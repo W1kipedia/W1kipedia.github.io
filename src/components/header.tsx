@@ -18,6 +18,10 @@ class Header extends Component<HeaderProps, HeaderState> {
 		}
 	}
 
+	autoScroll() {
+		window.scrollTo(0, 0);
+	}
+
 	render() {
 		return (
 			<header>
@@ -29,15 +33,15 @@ class Header extends Component<HeaderProps, HeaderState> {
 					</a>
 
 					<ul className={`__nav ${this.state.isOpen ? 'visible_navbar' : ''}`}>
-						<NavLink exact to="/" replace>
+						<NavLink onClick={() => this.autoScroll()} exact to="/" replace>
 							<li className={`first_nav_element`}>Home</li>
 						</NavLink>
 
-						<NavLink exact to="/about" replace>
+						<NavLink onClick={() => this.autoScroll()} exact to="/about" replace>
 							<li>About</li>
 						</NavLink>
 
-						<NavLink exact to="/projects" replace>
+						<NavLink onClick={() => this.autoScroll()} exact to="/projects" replace>
 							<li>Projects</li>
 						</NavLink>
 
@@ -45,7 +49,7 @@ class Header extends Component<HeaderProps, HeaderState> {
 							<li>Contact</li>
 						</NavLink> */}
 
-						<a onClick={() => window.location.replace("/#/ThankYou")} target="_blank" href="https://formsubmit.co/el/yibohe">
+						<a onClick={() => { window.location.replace("/#/ThankYou"); this.autoScroll();}} target="_blank" href="https://formsubmit.co/el/yibohe">
 							<li>Contact</li>
 						</a>
 
