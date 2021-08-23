@@ -43,6 +43,12 @@
 	margin-bottom: 20px;
 }
 
+@media (max-width: 500px) {
+	.refs {
+		font-size: 2.5rem;
+	}
+}
+
 .refs a {
 	color: black;
 	text-decoration: none;
