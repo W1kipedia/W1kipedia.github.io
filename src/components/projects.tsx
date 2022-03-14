@@ -21,7 +21,7 @@ class Projects extends Component<ProjectsProps, ProjectsState> {
 							<p>The new and improved Switch Bot! This discord bot is a newer version of the original SwitchBot but in Typescript</p>
 						</div>
 						<div className="refs">
-							<a href="https://github.com/W1kipedia/SwitchBot.js" className="fab fa-github" title="Github"></a>
+							<a href="https://github.com/W1kipedia/SwitchBot.js" target='_blank' className="fab fa-github" title="Github"></a>
 						</div>
 					</div>
 				</div>
